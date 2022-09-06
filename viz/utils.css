@@ -1,0 +1,125 @@
+:root {
+    --light-color: rgb(200, 200, 200);
+    --dark-color: rgb(40, 40, 40);
+    --border-color: rgb(245, 229, 139);
+    --color-base: #69b3a2;
+  }
+
+
+#tooltip {
+    opacity: 0;
+    top: 50px;
+    left: 50px;
+    position: absolute;
+    background-color: var(--dark-color);
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--dark-color) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: var(--light-color);
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: 0;
+    outline: none;
+    padding: 8px .8em;
+  }
+  
+  #tail1 {
+    opacity: 0;
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-color: var(--border-color) transparent transparent transparent;
+    border-width: 10px;
+    border-style: solid;
+  }
+  #tail2 {
+    opacity: 0;
+    position: absolute;
+    bottom: -19px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-color: var(--dark-color) transparent transparent transparent;
+    border-width: 10px;
+    border-style: solid;
+  }
+  
+  #tail3 {
+    opacity: 0;
+    top: -20px;
+    position: absolute;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent var(--border-color) transparent;
+    border-width: 10px;
+    border-style: solid;
+  }
+  #tail4 {
+    opacity: 0;
+    position: absolute;
+    top: -19px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent var(--dark-color) transparent;
+    border-width: 10px;
+    border-style: solid;
+  }
+
+
+
+/******************************************************************/
+
+.table_row_unselected{
+  background-color: var(--dark-color);
+}
+.table_row_brushed{
+  background-color: red;
+}
+.table_row_selected{
+  background-color: yellow;
+}
+/**/
+
+.path_unselected{
+  stroke-width: 0.1px;
+  stroke: var(--color-base);
+}
+
+.path_brushed{
+  stroke-width: 0.1px;
+  stroke: red;
+}
+
+.path_selected{
+  stroke-width: 0.3px;
+  stroke: yellow;
+}
+/**/
+.circle_unselected{
+  fill:var(--color-base)
+}
+.circle_brushed{
+  fill: red
+}
+.circle_selected{
+  fill: yellow
+}
+/**/
+.map_selected{
+  fill: yellow
+}
+.map_unselected{
+  
+}
+.map_unknown{
+  fill: black
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head> 
+    <link type="text/css" rel="stylesheet" href="style.css"/> 
+    <link type="text/css" rel="stylesheet" href="utils.css"/> 
+</head>
+<body>
+    <div class = " container_all darkMode_layout" id="all" >
+
+        <div class="darkMode_layout toolbar " id="toolbar_id">
+            <div class = "titolo">TEMPORALE</div>
+        </div>
+
+        <div id = "zone_1_id" class = "zone zone_1"></div>
+        <div id = "zone_2_id" class = "zone zone_2"></div>
+        <div id = "zone_3_id" class = "zone zone_3"></div>
+        <div id = "zone_4_id" class = "zone zone_4"></div>
+
+        <div id="tooltip">
+            <span id="tooltip-text"></span>
+            <div id="tail1" class="south-tail"></div>
+            <div id="tail2" class="south-tail"></div>
+            <div id="tail3" class="north-tail"></div>
+            <div id="tail4" class="north-tail"></div>
+          </div>
+
+    </div>
+
+
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+
+
+    <script type="module" src="views/load_data.js"></script>
+</body>
+
+</html>
